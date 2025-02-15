@@ -25,3 +25,5 @@ A continuacion, adjunto imagenes en tamaño mas reducido:
 ![image](https://github.com/user-attachments/assets/d88357eb-10f5-41b2-a2b0-a48f5d8e2d67)
 ![image](https://github.com/user-attachments/assets/960c0389-285a-4109-a039-b24e56a0e258)
 
+![image](https://github.com/user-attachments/assets/3f3624da-ed73-47a2-b618-573cb1958faf)
+
