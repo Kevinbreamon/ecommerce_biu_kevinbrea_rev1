@@ -4,26 +4,14 @@ Repositorio de maqueta ecommerce para cumplir con los requisitos evaluativos de 
 Dentro del diseño podemos encontrar una maqueta standar con navbar, hero, seccion de valores, productos, carousel, subscripcion y footer en la pagina.
 Todos los elementos seleccionables tiene un redireccionamiento (aun no asignado) a otros paginas del website.
 
-Se utilizaron sintaxis modernas de HTML con uso de los tags div, header, li, u, footer, span, br, section, entre otros...
-Uso de CSS vanilla para cambios especificos de animacion a traves de hoover en la pagina.
-Uso del framework de CSS Tailwind para estandarizacion y eficiencia en el diseño estetico de la pagina.
-Uso Javascript para interactividad del carousel en la pagina.
+El proyecto fue actualizado a una SPA utilizando el framework de React.
 
-Podra ver en cada uno de los archivos comentarios sobre la seccion del codigo, utilidad de clase de css y uso de funciones en javascript. 
+Actualmente mantenemos las maquetaciones vistas previamente, ahora dentro del framework React y a su vez añadimos a este una nueva ruta /admin que servira para acceder a crear y editar productos (de forma provisional dado que no se tiene la fase de loggin funcional aun, para crear un usuario admin) mediante funciones API RESFTUL conectado a la API publica mockapi.io. Estos objetos creados pueden ser visualizados en la pagina de la tienda.
 
-Adjunto imagenes en tamaño completo vista desde un ordenador:
-![image](https://github.com/user-attachments/assets/549cddc3-3928-42be-8f15-6c65d6de1fa4)
-![image](https://github.com/user-attachments/assets/c4607285-02b5-4a77-9881-82c1ee8487c1)
-![image](https://github.com/user-attachments/assets/4b1468bf-bde7-4876-9424-2ed52b4493a2)
-![image](https://github.com/user-attachments/assets/e16c4ec1-6226-4566-a845-4dc83ce23c5a)
+Adjunto imagenes de referencia:
 
-A continuacion, adjunto imagenes en tamaño mas reducido:
-
-![image](https://github.com/user-attachments/assets/a11e8744-f8de-4728-a4e9-9bd5035fc5e8)
-![image](https://github.com/user-attachments/assets/c316b681-1537-4897-940d-042dbed09306)
-![image](https://github.com/user-attachments/assets/42cf95e1-9d23-4ec6-ba8d-3358289116cc)
-![image](https://github.com/user-attachments/assets/d88357eb-10f5-41b2-a2b0-a48f5d8e2d67)
-![image](https://github.com/user-attachments/assets/960c0389-285a-4109-a039-b24e56a0e258)
-
-![image](https://github.com/user-attachments/assets/3f3624da-ed73-47a2-b618-573cb1958faf)
+![image](https://github.com/user-attachments/assets/6038a4f3-8214-4b36-ac10-a5876e0696d9)
+![image](https://github.com/user-attachments/assets/a69a789e-4469-44cf-84b0-75850e00e1cd)
+![image](https://github.com/user-attachments/assets/0af61cf4-e49b-4d10-a9b5-498530ad6c9b)
+![image](https://github.com/user-attachments/assets/b230629a-7ad9-498f-9369-512c6a008b07)
 
