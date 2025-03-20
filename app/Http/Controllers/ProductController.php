@@ -46,4 +46,63 @@ class ProductController extends Controller
         $product->delete();
         return back();
     }
+
+    public function exportCSV()
+    {
+        $fileName = 'productos.csv';
+        $products = Product::all();
+
+        $headers = [
+            "Content-Type"        => "text/csv",
+            "Content-Disposition" => "attachment; filename=$fileName",
+            "Pragma"              => "no-cache",
+            "Expires"             => "0"
+        ];
+
+        $columns = ['ID', 'Nombre', 'Estado', 'Stock', 'Precio'];
+
+        $callback = function() use ($products, $columns) {
+            $file = fopen('php://output', 'w');
+            fputcsv($file, $columns); // Encabezados
+
+            foreach ($products as $product) {
+                fputcsv($file, [
+                    $product->id,
+                    $product->name,
+                    $product->status,
+                    $product->stock,
+                    $product->price
+                ]);
+            }
+
+            fclose($file);
+        };
+
+        return response()->stream($callback, 200, $headers);
+    }
+
+    public function exportJSON()
+{
+    // Obtener todos los productos
+    $products = Product::all();
+
+    // Definir el nombre del archivo
+    $fileName = 'productos.json';
+
+    // Configurar encabezados para la descarga del archivo
+    $headers = [
+        "Content-Type"        => "application/json",
+        "Content-Disposition" => "attachment; filename=$fileName",
+        "Pragma"              => "no-cache",
+        "Expires"             => "0"
+    ];
+
+    // Convertir los productos a formato JSON
+    $jsonData = $products->toJson(JSON_PRETTY_PRINT);
+
+    // Devolver el archivo como una descarga
+    return response()->stream(function() use ($jsonData) {
+        echo $jsonData;
+    }, 200, $headers);
+}
 }

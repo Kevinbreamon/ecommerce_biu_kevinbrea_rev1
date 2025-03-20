@@ -4,6 +4,7 @@ import ProductCarousel from "../components/ProductCarousel";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link, usePage } from '@inertiajs/react';
+import Chatbot from "../Components/Chatbox";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
   return (
         <>
         <Navbar />
+        <Chatbot />
         <section>
             <div className="max-w-7xl mx-4 md:mx-auto py-6 sm:px-6 lg:px-8">
                 <div className="relative">

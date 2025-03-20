@@ -27,6 +27,26 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
+Route::get('/aboutUs', function () {
+    // Obtener el usuario autenticado
+    $user = Auth::user();
+
+    // Pasar el usuario a la vista de Inertia
+    return Inertia::render('AboutUsPage', [
+        'user' => $user,  // Pasa los datos del usuario autenticado al frontend
+    ]);
+})->name('AboutUsPage');
+
+Route::get('/brands', function () {
+    // Obtener el usuario autenticado
+    $user = Auth::user();
+
+    // Pasar el usuario a la vista de Inertia
+    return Inertia::render('BrandsPage', [
+        'user' => $user,  // Pasa los datos del usuario autenticado al frontend
+    ]);
+})->name('BrandsPage');
+
 Route::resource('/products', ProductController::class)
     ->only(['index', 'store', 'update', 'destroy']);
 
@@ -71,3 +91,5 @@ Route::middleware(['auth'])->group(function () {
 return Inertia::render('Navbar', [
     'user' => auth()->user(), // Pasamos el usuario autenticado a la vista
 ]);
+
+Route::get('/products/export', [ProductController::class, 'exportCSV'])->name('products.export');

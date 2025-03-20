@@ -50,13 +50,10 @@ const Navbar = () => {
             <Link href="/products">
               <li className="text-black hover:text-gray-600 transition-colors duration-300">Shop</li>
             </Link>
-            <Link href="#">
-              <li className="text-black hover:text-gray-600 transition-colors duration-300">Promotions</li>
+            <Link href="/aboutUs">
+              <li className="text-black hover:text-gray-600 transition-colors duration-300">About Us</li>
             </Link>
-            <Link href="#">
-              <li className="text-black hover:text-gray-600 transition-colors duration-300">New Arrival</li>
-            </Link>
-            <Link href="#">
+            <Link href="/brands">
               <li className="text-black hover:text-gray-600 transition-colors duration-300">Brands</li>
             </Link>
           </ul>
