@@ -7,6 +7,7 @@ Actualmente los cambios notables son:
 2. Creacion de una vista de objetos en  la seccion de shop.
 3. Mayor interactividad por parte de la pagina al incluir nuevos reruteados de pagina desde el home.
 4. La creación de una ruta oculta /admin, desde la cual se crean los objetos que se visualizan en la tienda. Esta ruta solo puede ser accesada por el usuario admin cuando esta logeado.
+5. En la ultima revisión fue agregado un chatbot utilizando OpenAI API Assistant.
 
 Adjunto imagenes de referencia de la pagina:
 ![image](https://github.com/user-attachments/assets/39cf4ada-59e2-4564-8c72-9bd7d08b7231)
@@ -20,4 +21,7 @@ Adjunto imagenes de referencia de la pagina:
 ![image](https://github.com/user-attachments/assets/2438468e-f1b2-45e4-b928-6b1ab22e0563)
 ![image](https://github.com/user-attachments/assets/7e90e42b-3b5a-4ee1-838f-455b0a21f380)
 ![image](https://github.com/user-attachments/assets/ab2116a3-99f1-45d3-93cd-1effe2f56dd3)
+![image](https://github.com/user-attachments/assets/3701600b-69fc-4154-9822-2f9974b32354)
+![image](https://github.com/user-attachments/assets/35dc48bd-5c33-4ed7-8616-4b929370f14f)
+![image](https://github.com/user-attachments/assets/559e1986-c827-490d-9438-e6ab54fdbb85)
 
